@@ -66,14 +66,19 @@ def solve_mystery():
                AND membership_status = 'gold'""",
             "Gold Gym Members"
         )
+        # 7. Caught the Murder!
+        execute_and_print(cursor,
+            "SELECT * FROM person WHERE id = '67318'",
+            "MURDER"
+        )
         
-        # 7. Get suspect interview
+        # 8. Get suspect interview
         execute_and_print(cursor,
             "SELECT * FROM interview WHERE person_id = '67318'",
             "Suspect Interview (Jeremy Bowers)"
         )
         
-        # 8. Find mastermind's car details
+        # 9. Find mastermind's car details
         execute_and_print(cursor,
             """SELECT * FROM drivers_license 
                WHERE gender = 'female' 
@@ -84,21 +89,21 @@ def solve_mystery():
             "Mastermind's Car Details"
         )
         
-        # 9. Find person IDs from license IDs
+        # 10. Find person IDs from license IDs
         execute_and_print(cursor,
             """SELECT * FROM person 
                WHERE license_id IN ('202298', '291182', '918773')""",
             "Potential Masterminds"
         )
         
-        # 10. Check income of suspects
+        # 11. Check income of suspects
         execute_and_print(cursor,
             """SELECT * FROM income 
                WHERE ssn IN ('961388910', '337169072', '987756388')""",
             "Suspects' Income"
         )
         
-        # 11. Verify concert attendance
+        # 12. Verify concert attendance
         execute_and_print(cursor,
             """SELECT * FROM facebook_event_checkin 
                WHERE person_id = '99716' 
