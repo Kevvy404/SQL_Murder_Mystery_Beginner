@@ -3,7 +3,7 @@
 ![SQL Detective](https://img.shields.io/badge/SQL-Detective-brightgreen) 
 ![Database Mystery](https://img.shields.io/badge/Mystery-Solved-success)
 
-A Python script that cracks the classic **SQL Murder Mystery** case by analyzing database clues with precise queries.
+A Python script that cracks the classic **SQL Murder Mystery** case by analysing database clues with precise queries.
 
 ## 🕵️‍♂️ Case Overview
 
